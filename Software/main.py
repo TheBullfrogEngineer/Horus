@@ -18,7 +18,7 @@ while True:
     img_final = cv2.resize(img_final, (width//2, height//2))
     _, frame = cam.read()
     frame = cv2.resize(frame, (width, height))
-    inverted_frame = cv2.flip(frame, 1)
+    #inverted_frame = cv2.flip(frame, 1)
     fr_height, fr_width, _ = img_final.shape
     cam_height, cam_width, _ = frame.shape
     x = (cam_width - fr_width) // 2
